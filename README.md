@@ -76,8 +76,6 @@ DLQ Message
 
 🚀 Deployment
 
-This project was deployed using AWS SAM:
-
 sam build
 sam deploy --guided
 
@@ -99,7 +97,6 @@ sam deploy --guided
 - Implementing message queues with SQS
 - Handling failures using Dead Letter Queues
 - Building scalable and resilient cloud architectures
-- Integrating multiple AWS services in a real-world system
 
 ---
 
