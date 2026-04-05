@@ -58,7 +58,7 @@ API Test
 
 SQS Queues
 
-"SQS Queues" (https://raw.githubusercontent.com/jolomiayu/aws-event-driven-system/main/screenshots/sqs-queues.png)
+![SQS Queues](https://raw.githubusercontent.com/jolomiayu/aws-event-driven-system/main/screenshots/sqs-queues.png)
 
 Lambda Function
 
