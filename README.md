@@ -62,7 +62,7 @@ SQS Queues
 
 Lambda Function
 
-"Lambda" (https://raw.githubusercontent.com/jolomiayu/aws-event-driven-system/main/screenshots/lambda-function-overview.png)
+![Lambda] (https://raw.githubusercontent.com/jolomiayu/aws-event-driven-system/main/screenshots/lambda-function-overview.png)
 
 DynamoDB Items
 
