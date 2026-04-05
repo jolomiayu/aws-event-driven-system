@@ -10,7 +10,7 @@ It showcases how to build a scalable and fault-tolerant system where messages ar
 
 🏗️ Architecture
 
-"Architecture" (architecture/architecture-diagram.png)
+"Architecture" (./architecture/architecture-diagram.png)
 
 ---
 
@@ -54,23 +54,23 @@ Example Request
 
 API Test
 
-"API Test" (screenshots/api-test.png)
+"API Test" (./screenshots/api-test.png)
 
 SQS Queues
 
-"SQS Queues" (screenshots/sqs-queues.png)
+"SQS Queues" (./screenshots/sqs-queues.png)
 
 Lambda Function
 
-"Lambda" (screenshots/lambda-function-overview.png)
+"Lambda" (./screenshots/lambda-function-overview.png)
 
 DynamoDB Items
 
-"DynamoDB" (screenshots/dynamodb-table-items.png)
+"DynamoDB" (./screenshots/dynamodb-table-items.png)
 
 DLQ Message
 
-"DLQ" (screenshots/dlq-message.png)
+"DLQ" (./screenshots/dlq-message.png)
 
 ---
 
