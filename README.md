@@ -10,7 +10,7 @@ It showcases how to build a scalable and fault-tolerant system where messages ar
 
 🏗️ Architecture
 
-"Architecture" (https://raw.githubusercontent.com/jolomiayu/aws-event-driven-system/main/architecture/architecture-diagram.png)
+![Architecture](https://raw.githubusercontent.com/jolomiayu/aws-event-driven-system/main/architecture/architecture-diagram.png)
 
 ---
 
