@@ -1,0 +1,74 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Resources:
+  DeadLetterQueue:
+    Type: AWS::SQS::Queue
+    Properties:
+      QueueName: dlq-queue
+  MainQueue:
+    Type: AWS::SQS::Queue
+    Properties:
+      QueueName: main-queue
+      RedrivePolicy:
+        deadLetterTargetArn:
+          Fn::GetAtt:
+          - DeadLetterQueue
+          - Arn
+        maxReceiveCount: 2
+  MessageTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: Messages
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+      - AttributeName: id
+        AttributeType: S
+      KeySchema:
+      - AttributeName: id
+        KeyType: HASH
+  ProducerFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: src/producer.lambda_handler
+      Runtime: python3.9
+      CodeUri: ProducerFunction
+      Policies:
+      - SQSSendMessagePolicy:
+          QueueName: main-queue
+      Environment:
+        Variables:
+          QUEUE_URL:
+            Ref: MainQueue
+      Events:
+        ApiEvent:
+          Type: Api
+          Properties:
+            Path: /send
+            Method: post
+    Metadata:
+      SamResourceId: ProducerFunction
+  ConsumerFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: src/consumer.lambda_handler
+      Runtime: python3.9
+      CodeUri: ConsumerFunction
+      Policies:
+      - SQSPollerPolicy:
+          QueueName: main-queue
+      - DynamoDBCrudPolicy:
+          TableName: Messages
+      Environment:
+        Variables:
+          TABLE_NAME: Messages
+      Events:
+        SQSEvent:
+          Type: SQS
+          Properties:
+            Queue:
+              Fn::GetAtt:
+              - MainQueue
+              - Arn
+            BatchSize: 1
+    Metadata:
+      SamResourceId: ConsumerFunction
