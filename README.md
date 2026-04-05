@@ -45,7 +45,7 @@ POST /send
 Example Request
 
 {
-  "message": "hello world"
+"message": "hello world"
 }
 
 ---
