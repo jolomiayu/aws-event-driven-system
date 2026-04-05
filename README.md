@@ -54,7 +54,7 @@ Example Request
 
 API Test
 
-"API Test" (https://raw.githubusercontent.com/jolomiayu/aws-event-driven-system/main/screenshots/api-test.png)
+![API Test](https://raw.githubusercontent.com/jolomiayu/aws-event-driven-system/main/screenshots/api-test.png)
 
 SQS Queues
 
