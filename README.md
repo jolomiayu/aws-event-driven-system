@@ -10,7 +10,7 @@ It showcases how to build a scalable and fault-tolerant system where messages ar
 
 🏗️ Architecture
 
-"Architecture" (./architecture/architecture-diagram.png)
+"Architecture" (https://raw.githubusercontent.com/jolomiayu/aws-event-driven-system/main/architecture/architecture-diagram.png)
 
 ---
 
@@ -54,23 +54,23 @@ Example Request
 
 API Test
 
-"API Test" (./screenshots/api-test.png)
+"API Test" (https://raw.githubusercontent.com/jolomiayu/aws-event-driven-system/main/screenshots/api-test.png)
 
 SQS Queues
 
-"SQS Queues" (./screenshots/sqs-queues.png)
+"SQS Queues" (https://raw.githubusercontent.com/jolomiayu/aws-event-driven-system/main/screenshots/sqs-queues.png)
 
 Lambda Function
 
-"Lambda" (./screenshots/lambda-function-overview.png)
+"Lambda" (https://raw.githubusercontent.com/jolomiayu/aws-event-driven-system/main/screenshots/lambda-function-overview.png)
 
 DynamoDB Items
 
-"DynamoDB" (./screenshots/dynamodb-table-items.png)
+"DynamoDB" (https://raw.githubusercontent.com/jolomiayu/aws-event-driven-system/main/screenshots/dynamodb-table-items.png)
 
 DLQ Message
 
-"DLQ" (./screenshots/dlq-message.png)
+"DLQ" (https://raw.githubusercontent.com/jolomiayu/aws-event-driven-system/main/screenshots/dlq-message.png)
 
 ---
 
