@@ -70,7 +70,7 @@ DynamoDB Items
 
 DLQ Message
 
-"DLQ" (https://raw.githubusercontent.com/jolomiayu/aws-event-driven-system/main/screenshots/dlq-message.png)
+![DLQ](https://raw.githubusercontent.com/jolomiayu/aws-event-driven-system/main/screenshots/dlq-message.png)
 
 ---
 
