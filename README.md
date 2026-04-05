@@ -66,7 +66,7 @@ Lambda Function
 
 DynamoDB Items
 
-"DynamoDB" (https://raw.githubusercontent.com/jolomiayu/aws-event-driven-system/main/screenshots/dynamodb-table-items.png)
+![DynamoDB](https://raw.githubusercontent.com/jolomiayu/aws-event-driven-system/main/screenshots/dynamodb-table-items.png)
 
 DLQ Message
 
